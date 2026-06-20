@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Application form</title>
+   <style>
+     fieldset{
+        width:700px;
+        font-weight: bold;
+        font-size: 30px;
+        border:3px double black;
+        background-color: #e8d1d1;
+        margin: 20px;
+        padding-left: 43px;
+        text-align: justify;
+      }
+      h1, h2{
+        text-align: center;
+        font-weight: bold;
+      }
+      input{
+        font-size:30px;
+        border-radius: 10px;
+      }
+   </style>
+  </head>
+  <body>
+    <fieldset>
+      <fieldset>
+    <legend><h1>ADMISSION FORM</h1></legend>
+      <form>
+        <label>STUDENT'S NAME: <input type="text"></label><br><br>
+        <label>FATHER'S NAME: <input type="text"></label><br><br>
+        <label>MOTHER'S NAME: <input type="text"></label><br><br>
+        <label>DATE OF BIRTH (D.O.B): <input type="date"></label><br><br>
+        GENDER:-<br><br>
+        <label>MALE: <input type="radio" name="gender"></label> 
+        <label>FEMALE: <input type="radio" name="gender"></label><br><br>
+        <label>MOBILE NUMBER: <input type="tel" maxlength="10"></label><br><br>
+        <label>EMAIL ID: <input type="email"></label><br><br>
+        <label>AADHAR NUMBER: <input type="tel" maxlength="12"></label><br><br>
+        <label>ADDRESS: <input type="address" placeholder=" village+post" color="gray" style="padding-bottom:50px;"></label><br><br>
+        <label>POST OFFICE: <input type="text" placeholder=" -select-" style="padding:20px;"></label><br><br>
+        <label>DISTRICT: <input type="text"></label><br><br>
+        <label>STATE: <input type="text"></label><br><br>
+        <label>PINCODE: <input type="tel" maxlength="6" placeholder=" 6-digits " style="padding:10px;"></label>
+        </fieldset>
+        <fieldset><legend><h2>FILE UPLOAD :-</h2></legend>
+        <label>Photo: <input type="file" accept="image/*"multiple></label><br><br>
+        <label>Signature : <input type="file" accept=".pdf"></label><br><br>
+        </fieldset>
+        <fieldset>
+        <legend><h2> SELECT COURSE :-</h2></legend>
+        <label> (B.A): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF ARTS<br><br>
+        <label> (B.SC): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF SCIENCE<br><br>
+        <label> (B.COM): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF COMMERCE<br><br>
+        <label> (B.C.A): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF COMPUTER APPLICATION<br><br>
+        <label> (B.B.A): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF BUSINESS ADMINISTRATION <br><br>
+        <label> (B.B.M): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF BUSINESS MANAGEMENT<br><br></fieldset>
+      </form>
+      </fieldset>
+  </body>
+</html>
