@@ -3,7 +3,7 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Application form</title>
+   <title>Admission Form</title>
    <style>
      fieldset{
         width:700px;
@@ -23,6 +23,45 @@
         font-size:30px;
         border-radius: 10px;
       }
+     .button2{
+       font-family: Courier New;
+          font-weight: bold;
+          color: black;
+          font-size: 40px;
+          background-color: #d0d0d0;
+          border-radius: 10px;
+          padding:10px;
+          margin: 30px 20px 30px 150px;
+          border: none;
+          box-shadow: 0 0 10px #323232;
+     }
+     .button2:hover{
+          background-color: gray;
+          color: white;
+          font-size: 50px;
+          margin: 40px 30px 40px 150px;
+          box-shadow: 0 0 10px #323232;
+     }
+     .button3{
+       font-family: Courier New;
+          font-weight: bold;
+          font-size: 40px;
+          background-color: #ff1d1d;
+          color: white;
+          border-radius: 10px;
+          padding:10px;
+          margin:30px 100px;
+          border: none;
+          box-shadow: 0 0 10px #004703;
+     }
+     .button3:hover{
+          background-color: #adc4e6;
+          color: red;
+          font-weight: bold;
+          font-size: 50px ;
+          margin: 40px 100px;
+          box-shadow: 0 0 10px #004703;
+     }
    </style>
   </head>
   <body>
@@ -48,7 +87,7 @@
         </fieldset>
         <fieldset><legend><h2>FILE UPLOAD :-</h2></legend>
         <label>Photo: <input type="file" accept="image/*"multiple></label><br><br>
-        <label>Signature: <input type="file" accept=".pdf"></label><br><br>
+        <label>Signature : <input type="file" accept=".pdf"></label><br><br>
         </fieldset>
         <fieldset>
         <legend><h2> SELECT COURSE :-</h2></legend>
@@ -58,6 +97,14 @@
         <label> (B.C.A): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF COMPUTER APPLICATION<br><br>
         <label> (B.B.A): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF BUSINESS ADMINISTRATION <br><br>
         <label> (B.B.M): <input type="checkbox"name="EDU[]"></label><br>BACHELOR OF BUSINESS MANAGEMENT<br><br></fieldset>
+      <div style="display:flex;">
+       <a href="Form.html"">
+  <button class="button2">&#10154;RESET </button>
+       </a>
+        <a href="index.html">
+    <button class="button3">&#10154;SUBMIT</button>
+        </a>
+    </div>
       </form>
       </fieldset>
   </body>
